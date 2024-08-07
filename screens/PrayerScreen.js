@@ -82,6 +82,9 @@ const PrayerScreen = ({ route }) => {
             <HalfBoldText text={prayers[type][index]} />
           </Card.Content>
         </Card>
+        <Text style={[styles.pageNumber, isDarkMode && styles.pageNumberDark]}>
+          {`${index + 1}/${prayers[type].length}`}
+        </Text>
       </View>
     </PanGestureHandler>
   );
@@ -110,6 +113,14 @@ const styles = StyleSheet.create({
   line: {
     fontSize: 32,
     textAlign: 'center',
+  },
+  pageNumber: {
+    marginTop: 20,
+    fontSize: 16,
+    color: '#000',
+  },
+  pageNumberDark: {
+    color: '#fff',
   },
 });
 
