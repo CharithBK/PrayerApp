@@ -66,9 +66,9 @@ const PrayerScreen = ({ route }) => {
 
   const handleGesture = ({ nativeEvent }) => {
     if (nativeEvent.state === State.END) {
-      if (nativeEvent.translationX < -width / 3) {
+      if (nativeEvent.translationX < -width / 10) {
         nextLine();
-      } else if (nativeEvent.translationX > width / 3) {
+      } else if (nativeEvent.translationX > width / 10) {
         prevLine();
       }
     }
@@ -77,11 +77,11 @@ const PrayerScreen = ({ route }) => {
   return (
     <PanGestureHandler onHandlerStateChange={handleGesture}>
       <View style={[styles.container, isDarkMode && styles.containerDark]}>
-        <Card style={[styles.card, isDarkMode && styles.cardDark]}>
+        <View style={[styles.card, isDarkMode && styles.cardDark]}>
           <Card.Content>
             <HalfBoldText text={prayers[type][index]} />
           </Card.Content>
-        </Card>
+        </View>
         <Text style={[styles.pageNumber, isDarkMode && styles.pageNumberDark]}>
           {`${index + 1}/${prayers[type].length}`}
         </Text>
@@ -102,9 +102,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
   card: {
-    width: width * 0.8,
+    width: width,
+    height: 200,
     padding: 20,
-    elevation: 4,
+    // elevation: 4,
     backgroundColor: '#fff',
   },
   cardDark: {

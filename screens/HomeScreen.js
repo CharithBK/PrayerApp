@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonDark: {
-    backgroundColor: '#bb86fc',
+    backgroundColor: '#fff',
   },
   buttonText: {
     color: '#fff',
