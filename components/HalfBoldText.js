@@ -27,11 +27,15 @@ const HalfBoldText = ({ text }) => {
 
 const styles = StyleSheet.create({
   container: {
-    fontSize: 32,
+    fontSize: 40,
     textAlign: 'center',
+    flexWrap: 'wrap',
+     overflow: 'visible'
   },
   bold: {
     fontWeight: 'bold',
+    flexWrap: 'wrap', 
+    overflow: 'visible'
   },
 });
 
