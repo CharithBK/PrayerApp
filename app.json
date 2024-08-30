@@ -2,9 +2,9 @@
   "expo": {
     "name": "LDS Pray Easy",
     "slug": "PrayerApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/logo.png",
+    "icon": "./assets/logo.jpg",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,7 +17,8 @@
         "image": "./assets/splash.png",
         "resizeMode": "contain",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "bundleIdentifier": "com.oshan7991.PrayerApp"
     },
     "android": {
       "adaptiveIcon": {
