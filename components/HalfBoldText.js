@@ -39,7 +39,7 @@ const calculateFontSize = (baseFontSize) => {
 
 const styles = StyleSheet.create({
   container: {
-    fontSize: calculateFontSize(35),
+    fontSize: calculateFontSize(30),
     textAlign: 'center',
     flexWrap: 'wrap',
     overflow: 'visible'

@@ -2,7 +2,7 @@
   "expo": {
     "name": "LDS Pray Easy",
     "slug": "PrayerApp",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/logo.jpg",
     "userInterfaceStyle": "light",
@@ -12,6 +12,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "buildNumber": "3",
       "supportsTablet": true,
       "splash": {
         "image": "./assets/splash.png",
